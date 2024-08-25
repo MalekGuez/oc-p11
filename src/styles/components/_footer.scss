@@ -1,0 +1,37 @@
+.kasa-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: calc(100% + 200px);
+    background: black;
+
+    margin-left: -100px;
+
+    padding-top: 60px;
+    padding-bottom: 30px;
+    &__logo {
+        margin-bottom: 30px;
+    }
+    &__text {
+        color: white;
+
+        text-align: center;
+        font-size: 24px;
+        font-style: normal;
+    }
+
+    @media (max-width: 768px) {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        
+        &__logo {
+            img {
+                width: 122px;
+            }
+        }
+        &__text {
+            font-size: 12px;
+        }
+    }
+}

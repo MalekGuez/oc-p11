@@ -1,0 +1,44 @@
+.kasa-dropdown {
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        
+        padding: 10px 15px;
+        font-size: 24px;
+        color: white;
+        background: $primary;
+        border-radius: 5px;
+    }
+
+    &__description {
+        padding: 20px;
+        white-space: pre-line;
+        background: #F6F6F6;
+        border-radius: 5px;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    &__arrow {
+        cursor: pointer;
+        transition: .2s ease all;
+        &--active {
+            rotate: 180deg;
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__title {
+            font-size: 16px;
+        }
+        &__description {
+            font-size: 13px;
+        }
+        &__arrow {
+            width: 25px;
+        }
+    }
+}

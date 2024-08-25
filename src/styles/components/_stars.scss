@@ -1,0 +1,22 @@
+.kasa-rating {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    svg {
+        width: 28px;
+    }
+
+    @media (max-width: 768px) {
+        width: 175px;
+        svg {
+            width: 25px;
+        }
+    }
+
+    @media (max-width: 428px) {
+        width: 130px;
+        svg {
+            width: 20px;
+        }
+    }
+}

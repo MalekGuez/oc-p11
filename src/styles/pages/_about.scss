@@ -1,0 +1,14 @@
+.kasa-about {
+    .kasa-banner {
+        margin-bottom: 42px;
+    }
+    .kasa-dropdown {
+        margin-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+        .kasa-banner, .kasa-dropdown {
+            margin-bottom: 20px;
+        }
+    }
+}

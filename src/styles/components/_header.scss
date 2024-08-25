@@ -1,0 +1,44 @@
+.kasa-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 50px;
+    
+    &__items {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+    }
+
+    &__item {
+        color: $primary;
+        font-size: 24px;
+
+        &--active {
+            text-decoration: underline;
+        }
+    }
+
+    @media (max-width: 768px) {
+        margin-bottom: 25px;
+        &__logo {
+            margin-right: 26px;
+            img {
+                width: 145px;
+            }
+        }
+
+        &__items {
+            justify-content: center;
+            gap: 26px;
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    }
+}
+
