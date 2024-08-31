@@ -13,18 +13,15 @@ const Dropdown = ({title, data, active = false}) => {
                 {title} 
                 <img className={`kasa-dropdown__arrow ${opened ? "kasa-dropdown__arrow--active" : ""}`} src={Arrow} onClick={handleOpened}/>
             </div>
-            {Array.isArray(data) && opened ? 
-                <div className="kasa-dropdown__description">
-                    {data.map((item, index) => (
+            <div className={`kasa-dropdown__description ${opened ? "kasa-dropdown__description--open" : ""}`}>
+                {Array.isArray(data) ? (
+                    data.map((item, index) => (
                         <p key={index}>{item}</p>
-                    ))}
-                </div>
-                :
-                opened &&
-                <div className="kasa-dropdown__description">
-                    {data}
-                </div>
-            }
+                    ))
+                ) : (
+                    <p>{data}</p>
+                )}
+            </div>
         </div>
     );
   };
