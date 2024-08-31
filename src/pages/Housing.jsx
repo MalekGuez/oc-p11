@@ -47,10 +47,10 @@ const Housing = () => {
                     </div>
                     <div className="kasa-housing__host">
                         <span className="kasa-housing__host__name"> {details.host.name.split(' ').map((part, index) => (
-                            <>
-                            {index > 0 && <br />} 
-                            {part}
-                            </>
+                            <span key={index}>
+                                {index > 0 && <br />} 
+                                {part}
+                            </span>
                         ))}</span>
                         <img className="kasa-housing__host__image" src={details.host.picture} alt="" />
                     </div>
@@ -69,10 +69,10 @@ const Housing = () => {
                         <Stars rating={details.rating} />
                         <div className="kasa-housing__host">
                         <span className="kasa-housing__host__name"> {details.host.name.split(' ').map((part, index) => (
-                                <>
-                                {index > 0 && <br />} 
-                                {part}
-                                </>
+                                <span key={index}>
+                                    {index > 0 && <br />} 
+                                    {part}
+                                </span>
                             ))}
                         </span>
                             <img className="kasa-housing__host__image" src={details.host.picture} alt="" />
